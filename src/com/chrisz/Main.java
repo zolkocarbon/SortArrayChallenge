@@ -1,5 +1,6 @@
 package com.chrisz;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -32,10 +33,13 @@ public class Main {
 
         boolean sorted = false;
         int temp;
+        // copy array
         int[] arrayCopy = new int[array.length];
         for(int i=0; i < array.length; i++) {
             arrayCopy[i] = array[i];
         }
+        // built in method
+        //int[] arrayCopy = Arrays.copyOf(array, array.length);
 
         while(!sorted) {
             sorted = true;
